@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
 
   //fetch data from openai
 
-  const response = await fetch("http://localhost:5000/", {
+  const response = await fetch("https://botcode-ynvm.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
