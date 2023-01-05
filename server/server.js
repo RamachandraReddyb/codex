@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  res.status("200").send({
+  res.status(200).send({
     message: "Hello from codex",
   });
 });
@@ -43,5 +43,5 @@ app.post("/", async (req, res) => {
 });
 
 app.listen(5000, () =>
-  console.log("Server is running on port https://localhost:5000/")
+  console.log("Server is running on port http://localhost:5000/")
 );
